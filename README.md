@@ -5,7 +5,6 @@ Simple CloudFormation nested stack
 ## USING SAM
 ### PYTHON VENV
 ```bash
-cd sam-express-sample
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -17,6 +16,7 @@ pip install aws-sam-cli
 sam build -t template-sam.yaml
 sam deploy -g 
 aws cloudformation delete-stack --stack-name sam-nw
+deactivate
 ```
 
 ## USING CFN
